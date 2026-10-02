@@ -1,0 +1,23 @@
+code: V10
+name: Kickoff
+group: 2
+collection: Junior Trend
+age: 10-12
+category: Boys
+shape: football
+palette: ['#A3C3A2', '#F0E8D6', '#152B3C', '#F5F2EB']
+capacity_ml: 40
+dimensions_mm: [65, 92, 43]
+description: Truncated ball body on a broad stable foot
+material: PET candidate with PP pump overcap
+closure: Threaded pump collar, gasket, integral travel lock; retained overcap
+label_mm: [36, 23]
+logo: Front centre, above product name; V monogram on cap
+process: Extrusion blow moulding plus injection-moulded cap; screen print
+complexity: Medium
+box_mm: [81, 112, 59]
+finish: Matte body, restrained satin accent; no detachable decoration
+format: Metered pump, subject to inhalation assessment
+closure_note: Illustrations show closed and exposed applicator states; retention hardware requires supplier engineering.
+
+Preliminary design estimates. No safety, cost, compliance or production certification.

@@ -1,0 +1,147 @@
+{
+  "pdfs": {
+    "Perfume_Collection_Master_Catalogue.pdf": {
+      "pages": 60,
+      "pages_rendered_at_150_dpi": 60,
+      "blank_pages": [],
+      "out_of_bounds_text_pages": [],
+      "size_bytes": 345182
+    },
+    "Technical_Drawings.pdf": {
+      "pages": 24,
+      "pages_rendered_at_150_dpi": 24,
+      "blank_pages": [],
+      "out_of_bounds_text_pages": [],
+      "size_bytes": 118573
+    }
+  },
+  "image_checks": {
+    "V01": {
+      "pngs": 8,
+      "minimum_width_px": 2400,
+      "shape": "teddy"
+    },
+    "V02": {
+      "pngs": 8,
+      "minimum_width_px": 2400,
+      "shape": "cloud"
+    },
+    "V03": {
+      "pngs": 8,
+      "minimum_width_px": 2400,
+      "shape": "star"
+    },
+    "V04": {
+      "pngs": 8,
+      "minimum_width_px": 2400,
+      "shape": "moon"
+    },
+    "V05": {
+      "pngs": 8,
+      "minimum_width_px": 2400,
+      "shape": "unicorn"
+    },
+    "V06": {
+      "pngs": 8,
+      "minimum_width_px": 2400,
+      "shape": "rocket"
+    },
+    "V07": {
+      "pngs": 8,
+      "minimum_width_px": 2400,
+      "shape": "dolphin"
+    },
+    "V08": {
+      "pngs": 8,
+      "minimum_width_px": 2400,
+      "shape": "arch"
+    },
+    "V09": {
+      "pngs": 8,
+      "minimum_width_px": 2400,
+      "shape": "astronaut"
+    },
+    "V10": {
+      "pngs": 8,
+      "minimum_width_px": 2400,
+      "shape": "football"
+    },
+    "V11": {
+      "pngs": 8,
+      "minimum_width_px": 2400,
+      "shape": "butterfly"
+    },
+    "V12": {
+      "pngs": 8,
+      "minimum_width_px": 2400,
+      "shape": "pixel"
+    },
+    "V13": {
+      "pngs": 8,
+      "minimum_width_px": 2400,
+      "shape": "shield"
+    },
+    "V14": {
+      "pngs": 8,
+      "minimum_width_px": 2400,
+      "shape": "palette"
+    },
+    "V15": {
+      "pngs": 8,
+      "minimum_width_px": 2400,
+      "shape": "loop"
+    },
+    "V16": {
+      "pngs": 8,
+      "minimum_width_px": 2400,
+      "shape": "petal"
+    },
+    "V17": {
+      "pngs": 8,
+      "minimum_width_px": 2400,
+      "shape": "bevel"
+    },
+    "V18": {
+      "pngs": 8,
+      "minimum_width_px": 2400,
+      "shape": "crystal"
+    },
+    "V19": {
+      "pngs": 8,
+      "minimum_width_px": 2400,
+      "shape": "wave"
+    },
+    "V20": {
+      "pngs": 8,
+      "minimum_width_px": 2400,
+      "shape": "cylinder"
+    },
+    "V21": {
+      "pngs": 8,
+      "minimum_width_px": 2400,
+      "shape": "slab"
+    },
+    "V22": {
+      "pngs": 8,
+      "minimum_width_px": 2400,
+      "shape": "teardrop"
+    },
+    "V23": {
+      "pngs": 8,
+      "minimum_width_px": 2400,
+      "shape": "hex"
+    },
+    "V24": {
+      "pngs": 8,
+      "minimum_width_px": 2400,
+      "shape": "lens"
+    }
+  },
+  "notes": [
+    "All visual assets are conceptual vector artwork.",
+    "RGB presentation PDFs are not PDF/X-certified press releases."
+  ],
+  "packaging_carton_pdfs_rendered": 24,
+  "all_packaging_pdfs_rendered": 49,
+  "verified": true
+}

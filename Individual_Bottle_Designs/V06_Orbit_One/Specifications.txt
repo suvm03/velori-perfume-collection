@@ -1,0 +1,23 @@
+code: V06
+name: Orbit One
+group: 1
+collection: Wonder World
+age: 6-9
+category: Boys
+shape: rocket
+palette: ['#91AEC9', '#E06B54', '#152B3C', '#F5F2EB']
+capacity_ml: 35
+dimensions_mm: [54, 112, 38]
+description: Rounded rocket shoulders with integral low fins
+material: Fragrance-compatible PP bottle with integral moulded silhouette; PP closure
+closure: Captive hinged cover over retained roll-on ball; parent controls use
+label_mm: [30, 28]
+logo: Front centre, above product name; V monogram on cap
+process: Extrusion blow moulding plus injection-moulded cap; screen print
+complexity: High
+box_mm: [70, 132, 54]
+finish: Matte body, restrained satin accent; no detachable decoration
+format: Parent-controlled roll-on; no spray
+closure_note: Illustrations show cover closed/open as capped/uncapped states. Hinge and retention require engineering; no loose decorative cap.
+
+Preliminary design estimates. No safety, cost, compliance or production certification.

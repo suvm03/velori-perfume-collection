@@ -1,0 +1,23 @@
+code: V14
+name: Palette Pop
+group: 2
+collection: Junior Trend
+age: 10-12
+category: Girls
+shape: palette
+palette: ['#D9947B', '#EBCE87', '#152B3C', '#F5F2EB']
+capacity_ml: 40
+dimensions_mm: [72, 93, 35]
+description: Asymmetric artist palette without finger hole
+material: PET candidate with PP pump overcap
+closure: Threaded pump collar, gasket, integral travel lock; retained overcap
+label_mm: [40, 23]
+logo: Front centre, above product name; V monogram on cap
+process: Extrusion blow moulding plus injection-moulded cap; screen print
+complexity: Medium
+box_mm: [88, 113, 51]
+finish: Matte body, restrained satin accent; no detachable decoration
+format: Metered pump, subject to inhalation assessment
+closure_note: Illustrations show closed and exposed applicator states; retention hardware requires supplier engineering.
+
+Preliminary design estimates. No safety, cost, compliance or production certification.

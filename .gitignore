@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.DS_Store
+node_modules/
+Quality_Checks/*Contact*.png
+Quality_Checks/Catalogue_Page_*.png

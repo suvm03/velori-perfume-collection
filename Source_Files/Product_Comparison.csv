@@ -1,0 +1,25 @@
+Code,Product,Collection,Age,Category,mL,W mm,H mm,D mm,Complexity
+V01,Hush Bear,Little Magic,3-5,Unisex,30,62,88,36,High
+V02,Cloudlet,Little Magic,3-5,Girls,30,68,78,34,Medium
+V03,Little Comet,Little Magic,3-5,Boys,25,62,85,33,Medium
+V04,Moon Nest,Little Magic,3-5,Unisex,30,58,90,35,Medium
+V05,Prism Pony,Wonder World,6-9,Girls,35,65,103,36,High
+V06,Orbit One,Wonder World,6-9,Boys,35,54,112,38,High
+V07,Tidal Friend,Wonder World,6-9,Unisex,35,70,96,35,High
+V08,Rainbow Arc,Wonder World,6-9,Girls,35,66,95,36,Medium
+V09,Cosmo Scout,Wonder World,6-9,Boys,35,60,103,39,Medium
+V10,Kickoff,Junior Trend,10-12,Boys,40,65,92,43,Medium
+V11,Flutter Studio,Junior Trend,10-12,Girls,40,78,98,34,High
+V12,Pixel Pulse,Junior Trend,10-12,Unisex,40,58,104,36,High
+V13,Aero League,Junior Trend,10-12,Boys,40,60,107,37,Medium
+V14,Palette Pop,Junior Trend,10-12,Girls,40,72,93,35,Medium
+V15,Loop Lab,Teen Vibes,13-15,Unisex,50,64,112,38,Medium
+V16,Petal Edit,Teen Vibes,13-15,Girls,50,60,117,36,Medium
+V17,Night Circuit,Teen Vibes,13-15,Boys,50,56,116,38,Medium
+V18,Crystal Mood,Teen Vibes,13-15,Girls,50,61,115,39,Medium
+V19,Waveform,Teen Vibes,13-15,Unisex,50,63,110,37,Medium
+V20,Quiet Form,Signature Youth,16-18,Unisex,60,49,127,49,Medium
+V21,Slate No. 01,Signature Youth,16-18,Boys,60,65,115,30,Medium
+V22,Rose Axis,Signature Youth,16-18,Girls,60,53,126,38,Medium
+V23,Amber Vertex,Signature Youth,16-18,Boys,60,58,119,40,Medium
+V24,Equinox,Signature Youth,16-18,Unisex,60,70,110,31,Medium

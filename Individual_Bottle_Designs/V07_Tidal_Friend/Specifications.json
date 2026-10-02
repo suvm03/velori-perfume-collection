@@ -1,0 +1,39 @@
+{
+  "code": "V07",
+  "name": "Tidal Friend",
+  "group": 1,
+  "collection": "Wonder World",
+  "age": "6-9",
+  "category": "Unisex",
+  "shape": "dolphin",
+  "palette": [
+    "#77C5C4",
+    "#D5ECE7",
+    "#152B3C",
+    "#F5F2EB"
+  ],
+  "capacity_ml": 35,
+  "dimensions_mm": [
+    70,
+    96,
+    35
+  ],
+  "description": "Dolphin arc embossed in a wave-shaped body",
+  "material": "Fragrance-compatible PP bottle with integral moulded silhouette; PP closure",
+  "closure": "Captive hinged cover over retained roll-on ball; parent controls use",
+  "label_mm": [
+    39,
+    24
+  ],
+  "logo": "Front centre, above product name; V monogram on cap",
+  "process": "Extrusion blow moulding plus injection-moulded cap; screen print",
+  "complexity": "High",
+  "box_mm": [
+    86,
+    116,
+    51
+  ],
+  "finish": "Matte body, restrained satin accent; no detachable decoration",
+  "format": "Parent-controlled roll-on; no spray",
+  "closure_note": "Illustrations show cover closed/open as capped/uncapped states. Hinge and retention require engineering; no loose decorative cap."
+}

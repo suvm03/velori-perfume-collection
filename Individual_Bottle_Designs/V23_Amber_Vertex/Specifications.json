@@ -1,0 +1,39 @@
+{
+  "code": "V23",
+  "name": "Amber Vertex",
+  "group": 4,
+  "collection": "Signature Youth",
+  "age": "16-18",
+  "category": "Boys",
+  "shape": "hex",
+  "palette": [
+    "#B39367",
+    "#D9CDB8",
+    "#152B3C",
+    "#F5F2EB"
+  ],
+  "capacity_ml": 60,
+  "dimensions_mm": [
+    58,
+    119,
+    40
+  ],
+  "description": "Hexagonal column with rounded vertical edges",
+  "material": "Annealed glass candidate with PP overcap; pump separated at disposal",
+  "closure": "Threaded pump collar, gasket, integral travel lock; retained overcap",
+  "label_mm": [
+    32,
+    30
+  ],
+  "logo": "Front centre, above product name; V monogram on cap",
+  "process": "Custom moulded glass; annealing; screen print; injection-moulded overcap",
+  "complexity": "Medium",
+  "box_mm": [
+    74,
+    139,
+    56
+  ],
+  "finish": "Matte body, restrained satin accent; no detachable decoration",
+  "format": "Metered fine-mist pump",
+  "closure_note": "Illustrations show closed and exposed applicator states; retention hardware requires supplier engineering."
+}

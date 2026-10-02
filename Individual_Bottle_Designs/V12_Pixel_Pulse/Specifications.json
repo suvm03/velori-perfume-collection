@@ -1,0 +1,39 @@
+{
+  "code": "V12",
+  "name": "Pixel Pulse",
+  "group": 2,
+  "collection": "Junior Trend",
+  "age": "10-12",
+  "category": "Unisex",
+  "shape": "pixel",
+  "palette": [
+    "#B0A5D3",
+    "#B9D9D0",
+    "#152B3C",
+    "#F5F2EB"
+  ],
+  "capacity_ml": 40,
+  "dimensions_mm": [
+    58,
+    104,
+    36
+  ],
+  "description": "Three-step pixel shoulder, softened edges",
+  "material": "PET candidate with PP pump overcap",
+  "closure": "Threaded pump collar, gasket, integral travel lock; retained overcap",
+  "label_mm": [
+    32,
+    26
+  ],
+  "logo": "Front centre, above product name; V monogram on cap",
+  "process": "Extrusion blow moulding plus injection-moulded cap; screen print",
+  "complexity": "High",
+  "box_mm": [
+    74,
+    124,
+    52
+  ],
+  "finish": "Matte body, restrained satin accent; no detachable decoration",
+  "format": "Metered pump, subject to inhalation assessment",
+  "closure_note": "Illustrations show closed and exposed applicator states; retention hardware requires supplier engineering."
+}

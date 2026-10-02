@@ -1,0 +1,39 @@
+{
+  "code": "V13",
+  "name": "Aero League",
+  "group": 2,
+  "collection": "Junior Trend",
+  "age": "10-12",
+  "category": "Boys",
+  "shape": "shield",
+  "palette": [
+    "#7CABC1",
+    "#E5C06B",
+    "#152B3C",
+    "#F5F2EB"
+  ],
+  "capacity_ml": 40,
+  "dimensions_mm": [
+    60,
+    107,
+    37
+  ],
+  "description": "Original shield with shallow centre spine",
+  "material": "PET candidate with PP pump overcap",
+  "closure": "Threaded pump collar, gasket, integral travel lock; retained overcap",
+  "label_mm": [
+    34,
+    27
+  ],
+  "logo": "Front centre, above product name; V monogram on cap",
+  "process": "Extrusion blow moulding plus injection-moulded cap; screen print",
+  "complexity": "Medium",
+  "box_mm": [
+    76,
+    127,
+    53
+  ],
+  "finish": "Matte body, restrained satin accent; no detachable decoration",
+  "format": "Metered pump, subject to inhalation assessment",
+  "closure_note": "Illustrations show closed and exposed applicator states; retention hardware requires supplier engineering."
+}

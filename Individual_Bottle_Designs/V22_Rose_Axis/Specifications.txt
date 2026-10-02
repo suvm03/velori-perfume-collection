@@ -1,0 +1,23 @@
+code: V22
+name: Rose Axis
+group: 4
+collection: Signature Youth
+age: 16-18
+category: Girls
+shape: teardrop
+palette: ['#BF928B', '#EAD9D0', '#152B3C', '#F5F2EB']
+capacity_ml: 60
+dimensions_mm: [53, 126, 38]
+description: Off-centre teardrop, flat base
+material: Annealed glass candidate with PP overcap; pump separated at disposal
+closure: Threaded pump collar, gasket, integral travel lock; retained overcap
+label_mm: [30, 32]
+logo: Front centre, above product name; V monogram on cap
+process: Custom moulded glass; annealing; screen print; injection-moulded overcap
+complexity: Medium
+box_mm: [69, 146, 54]
+finish: Matte body, restrained satin accent; no detachable decoration
+format: Metered fine-mist pump
+closure_note: Illustrations show closed and exposed applicator states; retention hardware requires supplier engineering.
+
+Preliminary design estimates. No safety, cost, compliance or production certification.

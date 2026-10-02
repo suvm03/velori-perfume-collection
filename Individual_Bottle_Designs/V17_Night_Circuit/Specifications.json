@@ -1,0 +1,39 @@
+{
+  "code": "V17",
+  "name": "Night Circuit",
+  "group": 3,
+  "collection": "Teen Vibes",
+  "age": "13-15",
+  "category": "Boys",
+  "shape": "bevel",
+  "palette": [
+    "#697D9F",
+    "#B8CEDA",
+    "#152B3C",
+    "#F5F2EB"
+  ],
+  "capacity_ml": 50,
+  "dimensions_mm": [
+    56,
+    116,
+    38
+  ],
+  "description": "Chamfered rectangular prism with diagonal relief",
+  "material": "Annealed glass candidate with PP overcap; pump separated at disposal",
+  "closure": "Threaded pump collar, gasket, integral travel lock; retained overcap",
+  "label_mm": [
+    31,
+    29
+  ],
+  "logo": "Front centre, above product name; V monogram on cap",
+  "process": "Custom moulded glass; annealing; screen print; injection-moulded overcap",
+  "complexity": "Medium",
+  "box_mm": [
+    72,
+    136,
+    54
+  ],
+  "finish": "Matte body, restrained satin accent; no detachable decoration",
+  "format": "Metered fine-mist pump",
+  "closure_note": "Illustrations show closed and exposed applicator states; retention hardware requires supplier engineering."
+}

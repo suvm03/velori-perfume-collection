@@ -1,0 +1,23 @@
+code: V16
+name: Petal Edit
+group: 3
+collection: Teen Vibes
+age: 13-15
+category: Girls
+shape: petal
+palette: ['#C989A1', '#E9D6CC', '#152B3C', '#F5F2EB']
+capacity_ml: 50
+dimensions_mm: [60, 117, 36]
+description: Three fluted petal panels, tapering shoulder
+material: Annealed glass candidate with PP overcap; pump separated at disposal
+closure: Threaded pump collar, gasket, integral travel lock; retained overcap
+label_mm: [34, 29]
+logo: Front centre, above product name; V monogram on cap
+process: Custom moulded glass; annealing; screen print; injection-moulded overcap
+complexity: Medium
+box_mm: [76, 137, 52]
+finish: Matte body, restrained satin accent; no detachable decoration
+format: Metered fine-mist pump
+closure_note: Illustrations show closed and exposed applicator states; retention hardware requires supplier engineering.
+
+Preliminary design estimates. No safety, cost, compliance or production certification.

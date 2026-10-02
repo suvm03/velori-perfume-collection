@@ -1,0 +1,39 @@
+{
+  "code": "V01",
+  "name": "Hush Bear",
+  "group": 0,
+  "collection": "Little Magic",
+  "age": "3-5",
+  "category": "Unisex",
+  "shape": "teddy",
+  "palette": [
+    "#CFA985",
+    "#F4E7D7",
+    "#152B3C",
+    "#F5F2EB"
+  ],
+  "capacity_ml": 30,
+  "dimensions_mm": [
+    62,
+    88,
+    36
+  ],
+  "description": "Broad bear silhouette; ears integrated into shell",
+  "material": "Fragrance-compatible PP bottle with integral moulded silhouette; PP closure",
+  "closure": "Captive hinged cover over metered dab valve; parent opens and applies",
+  "label_mm": [
+    35,
+    22
+  ],
+  "logo": "Front centre, above product name; V monogram on cap",
+  "process": "Extrusion blow moulding plus injection-moulded cap; screen print",
+  "complexity": "High",
+  "box_mm": [
+    78,
+    108,
+    52
+  ],
+  "finish": "Matte body, restrained satin accent; no detachable decoration",
+  "format": "Parent-controlled dab applicator; no spray",
+  "closure_note": "Illustrations show cover closed/open as capped/uncapped states. Hinge and retention require engineering; no loose decorative cap."
+}

@@ -1,0 +1,14 @@
+{
+  "verified": true,
+  "browser": "Chrome headless",
+  "designs": 24,
+  "collection_filter": true,
+  "category_filter": true,
+  "search": true,
+  "detail_dialog": true,
+  "gallery_view_switch": true,
+  "close_dialog": true,
+  "desktop_no_horizontal_overflow": true,
+  "mobile_no_horizontal_overflow": true,
+  "local_link_targets_exist": true
+}
