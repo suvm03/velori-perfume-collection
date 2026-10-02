@@ -48,3 +48,5 @@ with zipfile.ZipFile(downloads/'VELORI_Complete_Collection.zip','w',zipfile.ZIP_
     for name in ['Perfume_Collection_Master_Catalogue.pdf','Technical_Drawings.pdf','README.md','index.html','styles.css','app.js','Quality_Checks/Verification_Report.json']:
         z.write(root/name,name)
 print(f'Generated {len(designs)} web galleries, 24 individual ZIPs and complete collection ZIP.')
+from package_downloads import refresh_complete_archive
+refresh_complete_archive()

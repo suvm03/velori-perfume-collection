@@ -5,7 +5,7 @@ const dialog = document.getElementById('design-dialog');
 const state = {group: 'all', category: 'all', search: ''};
 let selected;
 let currentView = 'Hero';
-const views = ['Hero', 'Front', 'Side', 'Back', 'Perspective', 'Uncapped', 'Views', 'Technical', 'Packaging'];
+const views = ['3D', 'Hero', 'Front', 'Side', 'Back', 'Perspective', 'Uncapped', 'Views', 'Technical', 'Packaging'];
 const escapeHTML = value => String(value).replace(/[&<>"']/g, x => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[x]));
 const folder = c => `Individual_Bottle_Designs/${c.code}_${c.name.replaceAll(' ', '_').replaceAll('.', '')}`;
 const imageURL = (c, view, original = false) => original ? (view === 'Packaging' ? `Packaging_Concepts/${c.code}_Retail.png` : `${folder(c)}/${view}.png`) : `assets/designs/${c.code}/${view}.webp`;
@@ -23,7 +23,12 @@ function renderGrid() {
 function setView(view) {
   currentView = view;
   const img = document.getElementById('dialog-image');
-  img.src = imageURL(selected,view);
+  const is3D = view === '3D';
+  img.hidden = is3D;
+  document.getElementById('dialog-three').hidden = !is3D;
+  document.getElementById('full-image').hidden = is3D;
+  if (is3D) { window.VELORI3D?.showDialog(selected); document.dispatchEvent(new CustomEvent('velori:3d-open',{detail:selected})); }
+  else img.src = imageURL(selected,view);
   img.alt = `${selected.name} / ${view === 'Uncapped' ? 'exposed applicator' : view} concept illustration`;
   document.getElementById('full-image').href = imageURL(selected,view,true);
   document.querySelectorAll('#view-tabs button').forEach(b => {b.classList.toggle('active',b.dataset.view === view);b.setAttribute('aria-pressed',String(b.dataset.view === view));});
@@ -32,6 +37,7 @@ function openDesign(code, updateHash = true) {
   const c = designs.find(d => d.code === code);
   if (!c) return;
   selected = c;
+  dialog.dataset.code = c.code;
   document.getElementById('dialog-kicker').textContent = `${c.code} / DESIGN STUDY`;
   document.getElementById('dialog-collection').textContent = `${c.collection} / ${c.age} years / ${c.category}`;
   document.getElementById('dialog-title').textContent = c.name;
@@ -43,8 +49,8 @@ function openDesign(code, updateHash = true) {
   document.querySelector('#dialog-manufacturing').parentElement.open = false;
   document.getElementById('dialog-links').innerHTML = `<a href="${folder(c)}/Specifications.json" target="_blank" rel="noopener">Open full design specifications ↗</a><a href="Packaging_Concepts/${c.code}_Carton_Concept.pdf" target="_blank" rel="noopener">Open conceptual carton artwork ↗</a><a href="Packaging_Concepts/${c.code}_Label_Concept.pdf" target="_blank" rel="noopener">Open label artwork ↗</a><a href="downloads/${c.code}_Design_Pack.zip" download>Download this complete design pack ↓</a><a href="Technical_Drawings.pdf#page=${designs.indexOf(c)+1}" target="_blank" rel="noopener">Open technical drawing PDF ↗</a>`;
   document.getElementById('view-tabs').innerHTML = views.map(v=>`<button type="button" data-view="${v}" aria-pressed="false">${v==='Uncapped'?'Applicator':v==='Views'?'All views':v}</button>`).join('');
-  setView('Hero');
   if (!dialog.open) dialog.showModal();
+  setView('3D');
   document.body.classList.add('body-locked');
   if (updateHash) history.replaceState(null,'',`#design-${c.code}`);
 }
@@ -67,4 +73,5 @@ dialog.addEventListener('close',()=>{document.body.classList.remove('body-locked
 document.getElementById('reset').addEventListener('click',()=>{state.group='all';state.category='all';state.search='';document.getElementById('search').value='';document.getElementById('category').value='all';document.querySelectorAll('[data-group]').forEach(b=>{const active=b.dataset.group==='all';b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active));});renderGrid();});
 window.addEventListener('hashchange',()=>{if(location.hash.startsWith('#design-'))openDesign(location.hash.slice(8),false);});
 renderGrid();
+document.getElementById('studio-details').addEventListener('click',()=>openDesign(document.getElementById('studio-select').value));
 if(location.hash.startsWith('#design-'))openDesign(location.hash.slice(8),false);

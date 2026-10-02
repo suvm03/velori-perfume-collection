@@ -14,7 +14,7 @@ threading.Thread(target=server.serve_forever,daemon=True).start()
 profile=tempfile.mkdtemp(prefix='velori-browser-')
 chrome=Path('C:/Program Files/Google/Chrome/Application/chrome.exe')
 startup=subprocess.STARTUPINFO();startup.dwFlags|=subprocess.STARTF_USESHOWWINDOW
-process=subprocess.Popen([str(chrome),'--headless=new','--disable-gpu','--no-first-run','--no-default-browser-check','--remote-debugging-port=0','--remote-allow-origins=*',f'--user-data-dir={profile}','about:blank'],stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL,startupinfo=startup)
+process=subprocess.Popen([str(chrome),'--headless=new','--enable-unsafe-swiftshader','--no-first-run','--no-default-browser-check','--remote-debugging-port=0','--remote-allow-origins=*',f'--user-data-dir={profile}','about:blank'],stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL,startupinfo=startup)
 ws=None;seq=0
 def call(method,params=None):
     global seq
@@ -46,6 +46,18 @@ try:
         if js('document.querySelectorAll(".product-card").length')==24:break
         time.sleep(.2)
     assert js('document.querySelectorAll(".product-card").length')==24
+    for _ in range(100):
+        if js('document.getElementById("studio-canvas").dataset.ready')=='true':break
+        time.sleep(.2)
+    assert js('document.getElementById("studio-canvas").dataset.ready')=='true','3D studio did not initialise'
+    for code in [f'V{i:02}' for i in range(1,25)]:
+        js(f'document.getElementById("studio-select").value="{code}";document.getElementById("studio-select").dispatchEvent(new Event("change"))')
+        assert js('document.getElementById("studio-canvas").dataset.model')==code
+    js('document.getElementById("studio-select").value="V18";document.getElementById("studio-select").dispatchEvent(new Event("change"));document.getElementById("studio").scrollIntoView()')
+    js('document.querySelector("#studio [data-action=\\"box\\"]").click();document.querySelector("#studio [data-action=\\"cap\\"]").click()')
+    assert js('window.VELORI3D.studio.openCap && window.VELORI3D.studio.showBox')
+    time.sleep(1)
+    (checks/'Website_3D_Studio.png').write_bytes(base64.b64decode(call('Page.captureScreenshot',{'format':'png'})['data']))
     js('document.querySelector("[data-group=\\"0\\"]").click()')
     assert js('document.querySelectorAll(".product-card").length')==4
     js('document.getElementById("category").value="Boys";document.getElementById("category").dispatchEvent(new Event("change"))')
@@ -55,6 +67,10 @@ try:
     js('document.querySelector(".product-card").click()')
     assert js('document.getElementById("design-dialog").open')
     assert js('document.getElementById("dialog-title").textContent')=='Hush Bear'
+    assert js('!document.getElementById("dialog-three").hidden')
+    assert js('document.getElementById("dialog-canvas").dataset.ready')=='true'
+    time.sleep(.5)
+    (checks/'Website_3D_Detail.png').write_bytes(base64.b64decode(call('Page.captureScreenshot',{'format':'png'})['data']))
     js('document.querySelector("[data-view=\\"Back\\"]").click()')
     assert js('document.getElementById("dialog-image").getAttribute("src")').endswith('/Back.webp')
     call('Page.captureScreenshot',{'format':'png'})
@@ -71,7 +87,7 @@ try:
     local_links=js('Array.from(document.querySelectorAll("a[href],img[src],script[src],link[href]")).map(e=>e.getAttribute("href")||e.getAttribute("src")).filter(x=>x&&!x.startsWith("#")&&!x.startsWith("http"))')
     missing=[p for p in local_links if not (root/p.split('#')[0]).is_file()]
     assert not missing,missing
-    report={'verified':True,'browser':'Chrome headless','designs':24,'collection_filter':True,'category_filter':True,'search':True,'detail_dialog':True,'gallery_view_switch':True,'close_dialog':True,'desktop_no_horizontal_overflow':True,'mobile_no_horizontal_overflow':True,'local_link_targets_exist':True}
+    report={'verified':True,'browser':'Chrome headless','designs':24,'3d_models_built':24,'3d_cap_control':True,'3d_box_control':True,'3d_dialog':True,'collection_filter':True,'category_filter':True,'search':True,'detail_dialog':True,'gallery_view_switch':True,'close_dialog':True,'desktop_no_horizontal_overflow':True,'mobile_no_horizontal_overflow':True,'local_link_targets_exist':True}
     (checks/'Website_Verification.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
     print(json.dumps(report,indent=2))
 finally:
