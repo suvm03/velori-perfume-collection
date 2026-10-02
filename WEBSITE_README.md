@@ -33,3 +33,7 @@ Push to the `main` branch and configure GitHub Pages with GitHub Actions as the 
 The collection is conceptual vector design artwork. Engineering, testing, formula development, trademark clearance and printer-approved artwork remain separate development steps.
 
 The interactive viewer adds shaded parametric 3D previews to the original vector collection. Bodies are extruded and bevelled outline meshes, with illustrative liquid and closure parts. They are visual proposals, not hollow manufacturing CAD or simulations of final tested materials. "Open cap" separates the closure for inspection; a younger-user retained hinge is still an engineering requirement, not a functioning joint in this preview.
+
+## Vercel
+
+The site also supports a static Vercel deployment with `vercel deploy --prod --yes`. `vercel.json` selects no framework or build step and serves the project root. `.vercelignore` excludes local deployment metadata, verification screenshots and the large complete ZIP. Its download URL redirects to the existing public GitHub Pages copy; all individual design packs, full-resolution images, PDFs and 3D previews are hosted directly on Vercel. The complete collection remains available through the same website download button.

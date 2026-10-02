@@ -1,0 +1,9 @@
+.git/
+.github/
+.vercel/
+__pycache__/
+**/__pycache__/
+*.pyc
+.env*
+downloads/VELORI_Complete_Collection.zip
+Quality_Checks/*.png

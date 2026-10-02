@@ -1,0 +1,20 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": null,
+  "installCommand": null,
+  "outputDirectory": ".",
+  "redirects": [
+    {
+      "source": "/downloads/VELORI_Complete_Collection.zip",
+      "destination": "https://suvm03.github.io/velori-perfume-collection/downloads/VELORI_Complete_Collection.zip",
+      "permanent": false
+    }
+  ],
+  "headers": [
+    {
+      "source": "/assets/vendor/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=86400" }]
+    }
+  ]
+}
